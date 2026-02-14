@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>Feliz San Valentín</h1>
+        <h1>Cómo sé que te gusta...</h1>
       </header>
 
       <div className="points-container">
