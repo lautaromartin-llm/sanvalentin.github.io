@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", "Segoe UI", sans-serif;
+    background-color: #211f21;
+    color: #e61ece;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Pixel Art Hearts Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    background-image:
+        /* Corazón 1 - Grande arriba izquierda */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><rect x="10" y="15" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="30" y="15" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="0" y="25" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="10" y="25" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="20" y="25" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="30" y="25" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="40" y="25" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="0" y="35" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="10" y="35" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="20" y="35" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="30" y="35" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="40" y="35" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="10" y="45" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="20" y="45" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="30" y="45" width="10" height="10" fill="%23e61ece" opacity="0.3"/><rect x="20" y="55" width="10" height="10" fill="%23e61ece" opacity="0.3"/></svg>'),
+        /* Corazón 2 - Mediano arriba derecha */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect x="5" y="10" width="8" height="8" fill="%23e61ece" opacity="0.25"/><rect x="21" y="10" width="8" height="8" fill="%23e61ece" opacity="0.25"/><rect x="5" y="18" width="24" height="8" fill="%23e61ece" opacity="0.25"/><rect x="5" y="26" width="24" height="8" fill="%23e61ece" opacity="0.25"/><rect x="13" y="34" width="8" height="8" fill="%23e61ece" opacity="0.25"/></svg>'),
+        /* Corazón 3 - Pequeño centro */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"><rect x="5" y="8" width="6" height="6" fill="%23e61ece" opacity="0.2"/><rect x="17" y="8" width="6" height="6" fill="%23e61ece" opacity="0.2"/><rect x="5" y="14" width="18" height="6" fill="%23e61ece" opacity="0.2"/><rect x="11" y="20" width="6" height="6" fill="%23e61ece" opacity="0.2"/></svg>'),
+        /* Corazón 4 - Grande abajo izquierda */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"><rect x="10" y="15" width="12" height="12" fill="%23e61ece" opacity="0.18"/><rect x="34" y="15" width="12" height="12" fill="%23e61ece" opacity="0.18"/><rect x="10" y="27" width="36" height="12" fill="%23e61ece" opacity="0.18"/><rect x="10" y="39" width="36" height="12" fill="%23e61ece" opacity="0.18"/><rect x="22" y="51" width="12" height="12" fill="%23e61ece" opacity="0.18"/></svg>'),
+        /* Corazón 5 - Mediano abajo derecha */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"><rect x="8" y="12" width="9" height="9" fill="%23e61ece" opacity="0.22"/><rect x="26" y="12" width="9" height="9" fill="%23e61ece" opacity="0.22"/><rect x="8" y="21" width="27" height="9" fill="%23e61ece" opacity="0.22"/><rect x="17" y="30" width="9" height="9" fill="%23e61ece" opacity="0.22"/></svg>'),
+        /* Corazón 6 - Pequeño arriba centro */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"><rect x="4" y="7" width="5" height="5" fill="%23e61ece" opacity="0.28"/><rect x="14" y="7" width="5" height="5" fill="%23e61ece" opacity="0.28"/><rect x="4" y="12" width="15" height="5" fill="%23e61ece" opacity="0.28"/><rect x="9" y="17" width="5" height="5" fill="%23e61ece" opacity="0.28"/></svg>'),
+        /* Corazón 7 - Mediano izquierda centro */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"><rect x="10" y="13" width="10" height="10" fill="%23e61ece" opacity="0.24"/><rect x="30" y="13" width="10" height="10" fill="%23e61ece" opacity="0.24"/><rect x="10" y="23" width="30" height="10" fill="%23e61ece" opacity="0.24"/><rect x="20" y="33" width="10" height="10" fill="%23e61ece" opacity="0.24"/></svg>'),
+        /* Corazón 8 - Pequeño derecha centro */
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><rect x="5" y="8" width="6" height="6" fill="%23e61ece" opacity="0.26"/><rect x="15" y="8" width="6" height="6" fill="%23e61ece" opacity="0.26"/><rect x="5" y="14" width="16" height="6" fill="%23e61ece" opacity="0.26"/><rect x="11" y="20" width="6" height="6" fill="%23e61ece" opacity="0.26"/></svg>');
+
+    background-position:
+        8% 12%,
+        85% 8%,
+        45% 25%,
+        15% 68%,
+        88% 75%,
+        52% 5%,
+        5% 50%,
+        92% 45%;
+
+    background-repeat: no-repeat;
+    background-size:
+        60px 60px,
+        40px 40px,
+        30px 30px,
+        70px 70px,
+        45px 45px,
+        25px 25px,
+        50px 50px,
+        28px 28px;
+
+    filter: drop-shadow(0 0 8px rgba(230, 30, 206, 0.4));
+}
+
+/* Corazones adicionales flotantes */
+body::after {
+    content: "♥";
+    position: fixed;
+    font-size: 35px;
+    color: rgba(230, 30, 206, 0.2);
+    z-index: 0;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+    top: 35%;
+    left: 78%;
+    text-shadow: 0 0 15px rgba(230, 30, 206, 0.5);
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(5deg);
+    }
+}
+
+.app {
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #e61ece;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px rgba(230, 30, 206, 0.5);
+    letter-spacing: 1px;
+}
+
+.points-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+.point-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    background-color: rgba(230, 30, 206, 0.05);
+    border-radius: 12px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.point-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(230, 30, 206, 0.3);
+}
+
+.point-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.image-container {
+    flex: 0 0 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(230, 30, 206, 0.3);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.point-item:hover .image-container img {
+    transform: scale(1.05);
+}
+
+.text-container {
+    flex: 1;
+    padding: 1rem;
+}
+
+.text-container p {
+    font-size: 1.3rem;
+    color: #e61ece;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 6rem;
+    padding: 3rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer p {
+    font-size: 2rem;
+    color: #e61ece;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 0 0 30px rgba(230, 30, 206, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .point-item,
+    .point-item.reverse {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .image-container {
+        flex: 0 0 300px;
+        height: 300px;
+        width: 100%;
+    }
+
+    .text-container p {
+        font-size: 1.1rem;
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+    }
+
+    .app {
+        padding: 1rem;
+    }
+}
