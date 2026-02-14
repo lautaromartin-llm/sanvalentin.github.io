@@ -6,32 +6,32 @@ const points = [
   {
     id: 1,
     text: "Siempre te recuerdo cuando pienso en la Luna o cuando la miro.",
-    image: "/images/punto1.jpg",
+    image: "images/punto1.jpg",
   },
   {
     id: 2,
     text: "¿Te imaginás tener una cita viendo a esta preciosa? Me refiero a vos con 'preciosa'.",
-    image: "/images/punto2.jpg",
+    image: "images/punto2.jpg",
   },
   {
     id: 3,
     text: "Por suerte estamos lejos, así tus ojos no me opacan cuando quiero verla por el telescopio.",
-    image: "/images/punto3.jpg",
+    image: "images/punto3.jpg",
   },
   {
     id: 4,
     text: "Así cómo Júpiter, la Luna nos ha acompañado y salvado muchas veces de meteoritos, de igual forma que siempre me acompañás y estás para mí.",
-    image: "/images/punto4.jpg",
+    image: "images/punto4.jpg",
   },
   {
     id: 5,
     text: "¿Qué es mas grande? ¿El Sol, la Luna o lo mucho que te amo?.",
-    image: "/images/punto6.jpg",
+    image: "images/punto6.jpg",
   },
   {
     id: 6,
     text: "¿Sabías que lo que es para nosotros un'Eclipse de Luna', para la Luna es un 'Eclipse de Sol'?.",
-    image: "/images/punto7.jpg",
+    image: "images/punto7.jpg",
   },
 ];
 
@@ -50,7 +50,7 @@ function App() {
           >
             <div className="image-container">
               <img
-                src={point.image}
+                src={`${import.meta.env.BASE_URL}${point.image}`}
                 alt={`Punto ${point.id}`}
                 onError={(e) => {
                   e.target.src =
